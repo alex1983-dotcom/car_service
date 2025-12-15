@@ -14,7 +14,7 @@ engine = create_engine(f"sqlite:///{DB_PATH}", echo=False)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 @contextmanager
-def db_session():
+def get_db_session():
     """
     Контекстный менеджер дя безопасной работы с сессией
     :return:
