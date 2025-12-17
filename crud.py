@@ -60,7 +60,7 @@ class OrderCRUD:
             order.description = description
             session.add(order)
             session.refresh(order)
-            return order
+        return order
 
     @staticmethod
     def delete_order(session: Session, order_id: int) -> bool:
