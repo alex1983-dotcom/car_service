@@ -9,5 +9,9 @@ from config import get_db_session
 
 
 class MainWindow(QMainWindow):
-    pass
+    def __init__(self):
+        super().__init__()
+        self.resize(800, 500)
+
+
 
